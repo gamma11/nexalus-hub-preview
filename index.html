@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1b36">
+  <title>Nexalus Hub · Design preview</title>
+  <link rel="icon" href="assets/nexalus-launcher.png">
+  <link rel="stylesheet" href="hub.css">
+  <link rel="stylesheet" href="workspace.css">
+  <script src="workspace.js" defer></script>
+  <script src="hub.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home" aria-label="Nexalus Hub home"><span class="brandmark">N<span></span></span><span>NEXALUS<small>HUB</small></span></a>
+    <div class="workspace"><span class="workspace-icon">N</span><div>Nexalus Labs<small>Company workspace</small></div><span class="online" title="Sample workspace"></span></div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav id="navigation" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom"><div class="preview-note"><span class="preview-dot"></span> DESIGN PREVIEW<small>Sample data · Changes reset on reload</small></div><div class="profile"><span class="avatar">RM</span><div>Richard<small>Workspace administrator</small></div></div></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <b id="breadcrumb">Home</b></div><div class="top-actions"><button class="search-button" data-action="search"><span data-icon="search"></span> Search the Hub <kbd>Ctrl K</kbd></button><button class="icon-button notification-button" data-action="alerts" aria-label="View alerts"><span data-icon="bell"></span><i></i></button><span class="avatar small">RM</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>One workspace. Everything connected.<span>Nexalus Hub <b>Concept 01</b></span></footer>
+  </div>
+  <div id="overlay" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
